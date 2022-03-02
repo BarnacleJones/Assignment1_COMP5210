@@ -1,10 +1,12 @@
 import {createHeader} from "./header.js";
 
 function renderHomePage(){
+    // clear the page
+    let page = document.getElementById("page_content");
+    page.innerHTML = "";
     // create/append header
     createHeader();
     // define variables
-    let page = document.getElementById("page_content");
     let mainArea = document.createElement("div");
     //update contents of the main area
     mainArea.setAttribute("class", "main_area");

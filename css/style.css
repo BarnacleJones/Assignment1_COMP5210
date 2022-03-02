@@ -11,12 +11,10 @@ body{
 #page_content{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto auto auto;  
-    
+    grid-template-rows: auto auto auto;      
 }
 
-#pageimage{
-    /* width: 100%; */
+#pageimage{   
     /* Mobile responsive property for image scaling */
     max-width:100%;height:auto;
 }
