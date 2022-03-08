@@ -1,3 +1,4 @@
+
 // Function for creating the header to the webpage
 function createHeader(){
     
@@ -5,17 +6,27 @@ function createHeader(){
 
     let header = document.createElement("header");
 
-    header.innerHTML = `    
+    header.innerHTML = `  
+    <h4>Menu<h4>  
+    `
+    header.setAttribute("id", "header")
+    page.appendChild(header);
+    
+    let headerInner = document.createElement("div");
+    headerInner.innerHTML = `
     <h3 class="header_tag">Home</h1>
     <h3 class="header_tag">SCP002</h3>
     <h3 class="header_tag">SCP003</h3>
     <h3 class="header_tag">SCP004</h3>
     <h3 class="header_tag">SCP005</h3>
-    <h3 class="header_tag">SCP006</h3>`
-    header.setAttribute("class", "header")
-    page.appendChild(header);
-    
+    <h3 class="header_tag">SCP006</h3>
+    <h3 class="header_tag">CLOSE</h3>
+    `
+    page.appendChild(headerInner);
+    headerInner.setAttribute("id", "headerInner");
+    headerInner.style.display = "none";
 
+    
 }
 
 export {createHeader}

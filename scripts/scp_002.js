@@ -13,7 +13,6 @@ function render002(){
     mainArea.setAttribute("class", "main_area");
     mainArea.innerHTML = `
     <html>
-
     <head>
         <title>SCP-002 - SCP Foundation</title>
     </head>

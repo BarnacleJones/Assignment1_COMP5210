@@ -18,4 +18,6 @@ document.addEventListener("click", (e) => {
     if (target === "SCP004") render004();
     if (target === "SCP005") render005();
     if (target === "SCP006") render006();
+    if (target == "Menu") { header.style.display = "none"; headerInner.style.display = "flex"; }
+    if (target == "CLOSE") {header.style.display = "inherit"; headerInner.style.display = "none";}
 })
