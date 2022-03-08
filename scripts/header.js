@@ -7,7 +7,7 @@ function createHeader(){
     let header = document.createElement("header");
 
     header.innerHTML = `  
-    <h4>Menu<h4>  
+    <h2>Menu<h2>  
     `
     header.setAttribute("id", "header")
     page.appendChild(header);
