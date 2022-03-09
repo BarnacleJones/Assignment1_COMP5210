@@ -22,7 +22,7 @@ function createHeader(){
     <h3 class="header_tag">SCP004</h3>
     <h3 class="header_tag">SCP005</h3>
     <h3 class="header_tag">SCP006</h3>
-    <h3 class="header_tag">CLOSE</h3>
+    <h3 class="header_tag" style="color:red">CLOSE</h3>
     `
     page.appendChild(headerInner);
     headerInner.setAttribute("id", "headerInner");
