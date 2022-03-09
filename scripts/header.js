@@ -8,9 +8,11 @@ function createHeader(){
 
     header.innerHTML = `  
     <h2>Menu<h2>  
+    <br><br>
     `
     header.setAttribute("id", "header")
     page.appendChild(header);
+    
     
     let headerInner = document.createElement("div");
     headerInner.innerHTML = `
