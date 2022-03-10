@@ -2,9 +2,7 @@ body{
     margin: auto;
     width: 100%;
     background-color: #DAE0E6;
-    font-family: 'Smooch Sans', sans-serif;
-    
-    
+    font-family: 'Smooch Sans', sans-serif;   
 }
 .header_tag{
     font-size: inherit;
@@ -12,34 +10,38 @@ body{
 
 p, ol, h4{
     font-size: 0.4em;
-    width: 90%;
-    
+    width: 90%;    
 }
 
 #page_content{
+    /* set up grid for page - 10 columns of 1 fraction each, 3 auto sized rows */
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto auto auto;        
-    
+    grid-template-rows: auto auto auto;           
 }
 
+
 #pageimage{   
-    /* Mobile responsive property for image scaling */
-    max-width:90%;
-    height:auto;
+    /* Mobile responsive property for image scaling and centering*/    
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 5px;    
 }
 
 h1, h2, h3 {
     /* Mobile responsive text size for headers */
-    font-size: 3vh;
+    font-size: 5vh;
 }
 
 
 
 #header{
+    /* define grid area */
     grid-area: 1 /1 / span 1 / span 10;
     display: flex;
-    /* justify-content: center; */
     gap: 5%; 
     height:50%;    
     width: 100vw;
@@ -75,5 +77,5 @@ h1, h2, h3 {
     border-radius: 10px;
     border: 3px black solid;
     background-color: #e2dada;  
-    /* opacity: 0.75;   */
 }
+

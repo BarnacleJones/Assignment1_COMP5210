@@ -12,8 +12,8 @@ function renderHomePage(){
     mainArea.setAttribute("class", "main_area");
     mainArea.innerHTML = `
     <h1>Welcome to the SCP Foundation</h1>
-    <h2>Warning: The foundation database is</h2>
-    <h2>CLASSIFIED</h2>`
+    <h1>Warning: The foundation database is</h1>
+    <h1>CLASSIFIED</h1>`
     mainArea.style.textAlign = "center";
     // append to the DOM
     page.appendChild(mainArea)
